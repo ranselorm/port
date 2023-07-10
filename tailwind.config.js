@@ -33,7 +33,7 @@ module.exports = {
         site: 'url("/site-bg.svg")',
       },
       animation: {
-        "spin-slow": "spin 6s linear infinite",
+        "spin-slow": "spin 10s linear infinite",
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, "sans-serif"],
@@ -50,6 +50,6 @@ module.exports = {
 };
 
 const sora = [];
-12 + 3
+12 + 3;
 
 console.log();

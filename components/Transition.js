@@ -24,7 +24,7 @@ const Transition = () => {
         animate="animate"
         exit="exit"
         transition={{ delay: 0.2, duration: 0.4, ease: easeInOut }}
-        className="bg-[#2e2257] fixed top-0 right-full bottom-0 w-screen h-screen z-30"
+        className="bg-gradient-to-r from-primary/10 via-black/30 to-black/10 fixed top-0 right-full bottom-0 w-screen h-screen z-30"
       ></motion.div>
     </>
   );
