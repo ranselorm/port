@@ -23,7 +23,7 @@ const Home = () => {
               </span>
               <br />
               <div className="text-2xl xl:text-4xl flex items-center gap-x-3 mt-2 mx-5 xl:mx-0">
-                <span> I'm Selorm </span>
+                <span> I&apos;m Selorm </span>
                 <BsArrowRight className="text-accent font-bold" />
                 <span className="text-sm">Software Engineer</span>
               </div>

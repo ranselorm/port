@@ -110,6 +110,7 @@ const About = () => {
                 <div
                   className={`
                   capitalize cursor-pointer text-2xl`}
+                  key={itemIndex}
                 >
                   {item.title}
                   <span className="text-accent">.</span>

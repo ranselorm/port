@@ -41,7 +41,7 @@ const Contact = () => {
             exit="hidden"
             className="text-4xl text-center mb-12"
           >
-            Let's <span className="text-accent">connect.</span>
+            Let&apos;s <span className="text-accent">connect.</span>
           </motion.h2>
           <motion.form
             variants={fadeIn("up", 0.4)}
@@ -82,7 +82,7 @@ const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <button className="border-white/50 border px-4 py-2 rounded-full flex items-center gap-x-4 max-w-[150px] overflow-hidden group hover:border-accent">
-              Let's Talk <BsArrowRight className="text-xl" />
+              Let&apos;s Talk <BsArrowRight className="text-xl" />
             </button>
           </motion.form>
         </div>
