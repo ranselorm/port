@@ -23,7 +23,7 @@ const aboutData = [
         icon: <FaCss3 />,
       },
       {
-        title: "Javascript",
+        title: "Js",
         icon: <FaJs />,
       },
       {
@@ -38,14 +38,6 @@ const aboutData = [
         title: "Tailwind",
         icon: <SiNextdotjs />,
       },
-      {
-        title: "Native",
-        icon: <SiNextdotjs />,
-      },
-      {
-        title: "Firebase",
-        icon: <SiNextdotjs />,
-      },
     ],
   },
 ];
@@ -54,7 +46,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="py-32 text-center h-screen bg-primary/30">
+    <div className="py-32 text-center h-screen bg-primary/30 mt-[50px] xl:mt-0">
       <Circles />
       <div className="flex flex-col xl:flex-row container mx-auto h-full items-center gap-x-6">
         {/* text */}
@@ -80,9 +72,6 @@ const About = () => {
             fugiat eveniet itaque dolorum nobis, beatae quod perspiciatis
             dolores veritatis magni laboriosam pariatur. Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Praesentium consectetur
-            perspiciatis tempore sapiente autem eius quidem provident atque vero
-            dicta debitis culpa impedit unde, quae hic asperiores ad aperiam
-            illo?
           </motion.p>
           <Link href={"/contact"}>
             <motion.button
@@ -102,7 +91,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col items-center justify-center flex-1 w-full xl:max-w-[48%] mt-[40px] xl:mt-0"
+          className="flex flex-col items-center justify-center flex-1 w-full xl:max-w-[48%] mt-[20px] xl:mt-0"
         >
           <div className="flex gap-x-4 xl:gap-x-8 xl:mx-0">
             {aboutData.map((item, itemIndex) => {
@@ -119,7 +108,7 @@ const About = () => {
             })}
           </div>
           {/* -------------------------------------------------------------------------------- */}
-          <div className="grid grid-cols-4 gap-x-4 xl:gap-y-2 gap-y-1 max-w-[70%] text-white/60 xl:mt-10 mt-4">
+          <div className="grid grid-cols-6 xl:grid-cols-4 gap-x-4 xl:gap-y-2 gap-y-1 max-w-[70%] text-white/60 xl:mt-10 mt-4">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div key={itemIndex}>
