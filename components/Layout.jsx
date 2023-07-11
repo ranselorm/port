@@ -1,7 +1,12 @@
-import { Sora } from "@next/font/google";
+import { Sora, Montserrat } from "@next/font/google";
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
@@ -13,7 +18,7 @@ import TopLeftImg from "./TopLeftImg";
 const Layout = ({ children }) => {
   return (
     <div
-      className={`page bg-site text-white bg-no-repeat bg-cover ${sora.variable} font-sora relative`}
+      className={`page bg-site text-white bg-no-repeat bg-cover ${montserrat.variable} font-montserrat relative`}
     >
       <TopLeftImg />
       <Nav />

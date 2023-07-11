@@ -10,13 +10,13 @@ import {
 const links = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
-  { name: "services", path: "/services", icon: <HiRectangleGroup /> },
+  // { name: "services", path: "/services", icon: <HiRectangleGroup /> },
   { name: "work", path: "/work", icon: <HiViewColumns /> },
-  {
-    name: "testimonials",
-    path: "/testimonials",
-    icon: <HiChatBubbleBottomCenterText />,
-  },
+  // {
+  //   name: "testimonials",
+  //   path: "/testimonials",
+  //   icon: <HiChatBubbleBottomCenterText />,
+  // },
   {
     name: "contact",
     path: "/contact",
@@ -34,7 +34,7 @@ const Nav = () => {
   const pathname = router.pathname;
   return (
     <nav className="flex flex-col items-center xl:justify-center fixed gap-y-4 h-max mt-auto bottom-0 xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen">
-      <div className="w-full flex xl:flex-col justify-between xl:justify-center items-center gap-y-8 px-4 md:px-40 xl:px-0  xl:h-max py-8 bg-white/10 backdrop-blur-sm text-2xl xl:text-xl xl:rounded-full">
+      <div className="w-full flex xl:flex-col justify-between xl:justify-center items-center gap-y-10 px-10 md:px-40 xl:px-0  xl:h-max py-8 bg-white/10 backdrop-blur-sm text-2xl xl:text-xl xl:rounded-full">
         {links.map((link, index) => (
           <Link
             href={link.path}

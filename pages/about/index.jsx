@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Circles from "../../components/Circles";
+import Link from "next/link";
 
 import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
+import { BsArrowRight } from "react-icons/bs";
 import { SiNextdotjs } from "react-icons/si";
-// import {tailwi} from "react-icons/ai";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -11,7 +12,7 @@ import { fadeIn } from "../../variants";
 //  data
 const aboutData = [
   {
-    title: "skills",
+    title: "Tech Stack",
     info: [
       {
         title: "HTML5",
@@ -37,14 +38,13 @@ const aboutData = [
         title: "Tailwind",
         icon: <SiNextdotjs />,
       },
-    ],
-  },
-  {
-    title: "education",
-    info: [
       {
-        title: "Bsc. Computer Science - Dominion University College",
-        stage: "2016 - 2020",
+        title: "Native",
+        icon: <SiNextdotjs />,
+      },
+      {
+        title: "Firebase",
+        icon: <SiNextdotjs />,
       },
     ],
   },
@@ -84,7 +84,17 @@ const About = () => {
             dicta debitis culpa impedit unde, quae hic asperiores ad aperiam
             illo?
           </motion.p>
-          <button>Let's Connect</button>
+          <Link href={"/contact"}>
+            <motion.button
+              variants={fadeIn("right", 0.5)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="bg-accent/70 px-4 py-2 mx-auto xl:mx-0 rounded-sm flex items-center gap-x-4 mt-3 xl:mt-6"
+            >
+              Connect <BsArrowRight className="text-xl" />
+            </motion.button>
+          </Link>
         </div>
         {/* info */}
         <motion.div
@@ -92,33 +102,30 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col items-center xl:items-start flex-1 w-full xl:max-w-[48%]"
+          className="flex flex-col items-center justify-center flex-1 w-full xl:max-w-[48%] mt-[40px] xl:mt-0"
         >
           <div className="flex gap-x-4 xl:gap-x-8 xl:mx-0">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
-                  key={itemIndex}
-                  className={`${
-                    index === itemIndex &&
-                    "text-accent after:w-[100%] after:transition after:bg-accent duration-300"
-                  } capitalize cursor-pointer relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(itemIndex)}
+                  className={`
+                  capitalize cursor-pointer text-2xl`}
                 >
                   {item.title}
+                  <span className="text-accent">.</span>
                 </div>
               );
             })}
           </div>
-          <div className="flex gap-x-5 gap-y-3 flex-wrap justify-center text-sm max-w-[70%] py-10 xl:justify-start text-white/60">
+          {/* -------------------------------------------------------------------------------- */}
+          <div className="grid grid-cols-4 gap-x-4 xl:gap-y-2 gap-y-1 max-w-[70%] text-white/60 xl:mt-10 mt-4">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div key={itemIndex}>
-                  <div className="flex items-center gap-x-1">
-                    <span>{item.icon && item.icon}</span>
-                    <span className="text-xs">{item.title}</span>
+                  <div className="flex items-center gap-x-1 gap-y-2 flex-col">
+                    <span className="text-xl">{item.icon && item.icon}</span>
+                    <span className="text-xs text-white">{item.title}</span>
                     <br />
-                    <span>{item.stage && item.stage}</span>
                   </div>
                 </div>
               );
