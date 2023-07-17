@@ -76,13 +76,14 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-0 px-2 xl:px-0 text-justify text-white text-[16px] tracking-tight"
           >
-            Hey Pal, I&apos;m Selorm. I'm a Javascript developer who focuses on
-            Frontend development using HTML5, CSS3, Javascript, React.
-            <br /> <br /> I don't work on backend that much but when I do, my
-            preferred stack are Node, Express and MongoDB. <br /> <br />I am
-            comfortable working REST and GraphQL APIs. If I'm not engineering,
-            coding or developing, I'm probably in my vegetable garden, walking
-            my dogs, rocking Call of Duty or reading.
+            Hey Pal, I&apos;m Selorm. I&apos;m a Javascript developer who
+            focuses on Frontend development using HTML5, CSS3, Javascript,
+            React.
+            <br /> <br /> I don&apos;t work on backend that much but when I do,
+            my preferred stack are Node, Express and MongoDB. <br /> <br />I am
+            comfortable working REST and GraphQL APIs. If I&apos;m not
+            engineering, coding or developing, I&apos;m probably in my vegetable
+            garden, walking my dogs, playing Call of Duty or Reading.
             <br /> <br />
           </motion.p>
           <Link href={"/contact"}>
@@ -126,7 +127,12 @@ const About = () => {
                 <div key={itemIndex}>
                   <div className="flex gap-x-4 flex-wrap">
                     <div className="w-[50px] h-[50px] relative flex items-center justify-center">
-                      <Image src={item.img} fill className="object-contain" />
+                      <Image
+                        src={item.img}
+                        alt="skills"
+                        fill
+                        className="object-contain"
+                      />
                     </div>
                     <br />
                   </div>
