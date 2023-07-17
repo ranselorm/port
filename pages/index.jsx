@@ -39,8 +39,8 @@ const Home = () => {
             >
               As an engineer, I love coding, and developing web applications. I
               specialized in Frontend development by builing interactive and
-              responsive user interfaces for applications. Do have a project you
-              want us to work on? Hit the button below!
+              responsive user interfaces for applications. Do you have a project
+              you want us to work on? Let's Connect!
             </motion.p>
           </div>
           <Link href={"/contact"} className="z-10">
