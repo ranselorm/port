@@ -8,11 +8,11 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/th1.png",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/th3.png",
         },
         {
           title: "title",

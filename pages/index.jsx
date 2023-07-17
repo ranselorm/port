@@ -22,25 +22,25 @@ const Home = () => {
                 👋
               </span>
               <br />
-              <div className="text-2xl xl:text-4xl flex items-center gap-x-3 mt-2 mx-5 xl:mx-0">
-                <span> I&apos;m Selorm </span>
-                <BsArrowRight className="text-accent font-bold" />
-                <span className="text-sm">Software Engineer</span>
+              <div className="text-xl xl:text-2xl mt-2 xl:mx-0 w-full">
+                I&apos;m Selorm
+                <span className="mx-2 text-accent">|</span>
+                Software Engineer
               </div>
             </motion.div>
             <motion.p
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-6"
+              className="max-w-sm xl:max-w-[38vw] mx-auto xl:mx-0 mb-10 xl:mb-6 text-center xl:text-justify  text-white xl:leading-6 xl:text-[16px] -mt-0 xl:-mt-[10px] break-words"
               variants={fadeIn("down", 0.3)}
               initial="hidden"
               animate="show"
               exit="hidden"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-              est id dolorem doloribus dolores eum libero ducimus? Modi maxime,
-              ad voluptas repellat unde id? Veritatis, atque eius! Cupiditate,
-              iste quo?
+              As an engineer, I love coding, and developing web applications. I
+              specialized in Frontend development by builing interactive and
+              responsive user interfaces for applications. Do have a project you
+              want us to work on? Hit the button below!
             </motion.p>
-            <Link href={"/work"}>
+            <Link href={"/contact"}>
               <motion.button
                 variants={fadeIn("down", 0.4)}
                 initial="hidden"
@@ -48,7 +48,7 @@ const Home = () => {
                 exit="hidden"
                 className="bg-accent/70 px-4 py-2 mx-auto xl:mx-0 rounded-sm flex items-center gap-x-4"
               >
-                Projects <BsArrowRight className="text-xl" />
+                Contact <BsArrowRight className="text-xl" />
               </motion.button>
             </Link>
           </div>

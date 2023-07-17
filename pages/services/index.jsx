@@ -19,17 +19,6 @@ const Services = () => {
           >
             My Services<span className="text-accent">.</span>
           </motion.h2>
-          <motion.p
-            variants={fadeIn("up", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-[400px] mx-auto lg:mx-0 text-[14px]"
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptates, placeat distinctio. Laudantium officiis tempore quaerat
-            voluptatem tempora voluptatibus nulla! Dolore?
-          </motion.p>
         </div>
         <motion.div
           variants={fadeIn("down", 0.6)}

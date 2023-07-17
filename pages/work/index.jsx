@@ -25,11 +25,7 @@ const Work = () => {
             animate="show"
             exit="hidden"
             className="max-w-[300px] mx-auto lg:mx-0 text-[14px]"
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptates, placeat distinctio. Laudantium officiis tempore quaerat
-            voluptatem tempora voluptatibus nulla! Dolore?
-          </motion.p>
+          ></motion.p>
         </div>
         <motion.div
           variants={fadeIn("down", 0.6)}
@@ -41,7 +37,6 @@ const Work = () => {
           <WorkSlider />
         </motion.div>
       </div>
-      {/* <Bulb /> */}
     </div>
   );
 };
