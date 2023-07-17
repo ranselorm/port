@@ -40,7 +40,7 @@ const Home = () => {
               As an engineer, I love coding, and developing web applications. I
               specialized in Frontend development by builing interactive and
               responsive user interfaces for applications. Do you have a project
-              you want us to work on? Let's Connect!
+              you want us to work on? Let&apos;s Connect!
             </motion.p>
           </div>
           <Link href={"/contact"} className="z-10">
