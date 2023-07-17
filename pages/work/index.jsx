@@ -19,13 +19,6 @@ const Work = () => {
           >
             My Work<span className="text-accent">.</span>
           </motion.h2>
-          <motion.p
-            variants={fadeIn("up", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-[300px] mx-auto lg:mx-0 text-[14px]"
-          ></motion.p>
         </div>
         <motion.div
           variants={fadeIn("down", 0.6)}

@@ -74,27 +74,32 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-0 px-2 xl:px-0 text-justify text-white text-[16px] tracking-tight"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-0 px-2 xl:px-0 text-justify text-white text-[16px] flex flex-col -tracking-[0.05em]"
           >
-            Hey Pal, I&apos;m Selorm. I&apos;m a Javascript developer who
-            focuses on Frontend development using HTML5, CSS3, Javascript,
-            React.
-            <br /> <br /> I don&apos;t work on backend that much but when I do,
-            my preferred stack are Node, Express and MongoDB. <br /> <br />I am
-            comfortable working REST and GraphQL APIs. If I&apos;m not
-            engineering, coding or developing, I&apos;m probably in my vegetable
-            garden, walking my dogs, playing Call of Duty or Reading.
+            <span>
+              Hey Pal, I&apos;m a Javascript developer who focuses on Frontend
+              development using HTML5, CSS3, Js & React.
+            </span>
+            <span className="my-3 lg:my-5">
+              I don&apos;t regularly work on backend but when I do, my preferred
+              stack are Node, Express and MongoDB.
+            </span>
+            <span className="">
+              I am comfortable working with REST and GraphQL APIs. Not
+              developing? I&apos;m prolly in my vegetable garden, walking my
+              dogs, playing Call of Duty or Reading.
+            </span>
             <br /> <br />
           </motion.p>
-          <Link href={"/contact"}>
+          <Link href={"/work"}>
             <motion.button
               variants={fadeIn("right", 0.5)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="bg-accent/70 px-4 py-2 mx-auto xl:mx-0 rounded-sm flex items-center gap-x-4 -mt-4 xl:mt-6 mb-4"
+              className="border-white/50 border px-4 py-2 rounded-full max-w-[150px] overflow-hidden group hover:border-accent hover:transition-all hover:duration-300 flex items-center gap-x-4 -mt-[50px] xl:-mt-4 mb-2"
             >
-              Connect <BsArrowRight className="text-xl" />
+              Portfolio <BsArrowRight className="text-xl" />
             </motion.button>
           </Link>
         </div>
@@ -106,12 +111,12 @@ const About = () => {
           exit="hidden"
           className="flex flex-col items-center justify-center flex-1 w-full xl:max-w-[48%] mt-[20px] xl:mt-0"
         >
-          <div className="xl:mx-0">
+          <div className="xl:mx-0 -mt-[50px]">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   className={`
-                  capitalize text-2xl`}
+                  capitalize text-xl xl:text-2xl`}
                   key={itemIndex}
                 >
                   {item.title}
