@@ -74,7 +74,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-0 px-2 xl:px-0 text-justify text-white text-[16px] flex flex-col -tracking-[0.05em]"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-0 px-2 xl:px-0 text-justify text-white text-[16px] flex flex-col -tracking-[0.05em]"
           >
             <span>
               Hey Pal, I&apos;m a Javascript developer who focuses on Frontend
@@ -91,7 +91,7 @@ const About = () => {
             </span>
             <br /> <br />
           </motion.p>
-          <Link href={"/work"}>
+          <Link href={"/work"} className="hidden md:flex">
             <motion.button
               variants={fadeIn("right", 0.5)}
               initial="hidden"
@@ -111,7 +111,7 @@ const About = () => {
           exit="hidden"
           className="flex flex-col items-center justify-center flex-1 w-full xl:max-w-[48%] mt-[20px] xl:mt-0"
         >
-          <div className="xl:mx-0 -mt-[50px]">
+          <div className="xl:mx-0 -mt-[70px]">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -126,12 +126,12 @@ const About = () => {
             })}
           </div>
           {/* -------------------------------------------------------------------------------- */}
-          <div className="grid grid-cols-8 xl:grid-cols-4 gap-x-4 xl:gap-y-4 gap-y-0 max-w-[70%] text-white/60 xl:mt-10 mt-4">
+          <div className="grid grid-cols-8 gap-x-4 xl:gap-y-4 gap-y-0 max-w-[70%] text-white/60 xl:mt-10 mt-4">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div key={itemIndex}>
                   <div className="flex gap-x-4 flex-wrap">
-                    <div className="w-[50px] h-[50px] relative flex items-center justify-center">
+                    <div className="w-[100px] h-[50px] relative flex items-center justify-center">
                       <Image
                         src={item.img}
                         alt="skills"
