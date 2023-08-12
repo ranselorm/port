@@ -11,7 +11,6 @@ const montserrat = Montserrat({
 });
 
 //components
-import Nav from "./Nav";
 import Header from "./Header";
 import TopLeftImg from "./TopLeftImg";
 
@@ -21,7 +20,6 @@ const Layout = ({ children }) => {
       className={`page bg-site text-white bg-no-repeat bg-cover ${montserrat.variable} font-montserrat relative`}
     >
       <TopLeftImg />
-      <Nav />
       <Header />
       {children}
     </div>

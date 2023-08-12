@@ -1,5 +1,6 @@
-import { useContext } from "react";
+import Link from "next/link";
 import Image from "next/image";
+import { AiOutlineGithub } from "react-icons/ai";
 
 // data
 const workSlides = {
@@ -7,43 +8,51 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "Netflix UI Clone",
           path: "/th1.png",
+          link: "",
+          github: "",
         },
         {
-          title: "title",
+          title: "E-Commerce",
           path: "/th3.png",
+          link: "",
+          github: "",
         },
         {
-          title: "title",
+          title: "Project MGMT",
           path: "/thumb3.jpg",
+          link: "",
+          github: "",
         },
         {
-          title: "title",
+          title: "Real Estate",
           path: "/thumb4.jpg",
+          link: "",
+          github: "",
         },
       ],
     },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/thumb4.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb1.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-        },
-      ],
-    },
+    // {
+    //   images: [
+    //     {
+    //       title: "title",
+    //       path: "/thumb4.jpg",
+    //     },
+    //     {
+    //       title: "title",
+    //       path: "/thumb1.jpg",
+    //     },
+    //     {
+    //       title: "title",
+    //       path: "/thumb2.jpg",
+    //     },
+    //     {
+    //       title: "title",
+    //       path: "/thumb3.jpg",
+    //     },
+    //   ],
+    // },
   ],
 };
 
@@ -66,12 +75,12 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]  xl:mt-[80px] mt-0"
+      className="h-[280px] sm:h-[480px] xl:mt-[80px] mt-0"
     >
       {workSlides.slides.map((slide, itemIndex) => {
         return (
           <SwiperSlide key={itemIndex}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+            <div className="grid grid-cols-2 grid-rows-2 gap-4">
               {slide.images.map((image, index) => {
                 return (
                   <div
@@ -86,16 +95,22 @@ const WorkSlider = () => {
                         height={300}
                       />
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-70 transition-all duration-500"></div>
-                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 xl:group-hover:-translate-y-20 transition-all duration-300">
-                        <div className="flex items-center gap-x-4 text-[13px] tracking-[0.2em]">
+                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-2 xl:group-hover:-translate-y-10 transition-all duration-300">
+                        <div className="flex items-center flex-col xl:gap-y-4 gap-y-1 justify-center text-[13px] tracking-[0.2em]">
                           {/* title */}
-                          <p className="">LIVE</p>
-                          {/* title2 */}
-                          <p className="delay-100">PROJECT</p>
+                          <div className="xl:text-2xl text-[14px]">
+                            {image.title}
+                          </div>
+                          <Link
+                            href={""}
+                            className="delay-100 flex items-center gap-x-2 xl:text-[20px] text-sm xl:gap-y-4 gap-y-2 "
+                          >
+                            Preview <BsArrowRight />
+                          </Link>
                           {/* icon */}
-                          <p className="text-2xl text-white">
-                            <BsArrowRight />
-                          </p>
+                          <Link href={""}>
+                            <AiOutlineGithub className="xl:text-2xl text-xl" />
+                          </Link>
                         </div>
                       </div>
                     </div>

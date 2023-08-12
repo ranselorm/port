@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-6">
+    <div className="hidden md:flex items-center gap-x-6">
       <Link href={""} className="hover:text-accent transition-all duration-300">
         <AiOutlineTwitter />
       </Link>
