@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Socials from "../components/Socials";
+import Nav from "./Nav";
 import {
   AiOutlineCloseCircle,
   AiOutlineTwitter,
@@ -37,7 +38,7 @@ const Header = () => {
           <Link href={"/"}>
             <div className="text-[18px]">Selorm</div>
           </Link>
-          <ul className="items-center hidden md:flex md:gap-x-8 ">
+          {/* <ul className="items-center hidden md:flex md:gap-x-8 bg-red-500 ">
             {links.map((link, index) => (
               <Link
                 href={link.path}
@@ -45,10 +46,11 @@ const Header = () => {
                   link.path === pathname && "text-accent font-bold"
                 } capitalize text-[18px]`}
               >
-                <li>{link.name}</li>
+                <li>{link.icon}</li>
               </Link>
             ))}
-          </ul>
+          </ul> */}
+          <Nav />
           <Socials />
           {isOpen ? (
             <AiOutlineCloseCircle
