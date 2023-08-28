@@ -91,15 +91,15 @@ const About = () => {
             </span>
             <span className="my-3 lg:my-5">
               I wield a diverse set of languages including HTML, CSS,
-              JavaScript, and Python. When it comes to frameworks, I'm
+              JavaScript, and Python. When it comes to frameworks, I&apos;m
               well-versed in the likes of ReactJS, Node.js, Django, and React
               Native.
             </span>
             <span className="">
-              Beyond the realm of development, you'll likely find me immersing
-              myself in a captivating book, engaging in thrilling Call of Duty
-              matches, tending to my vegetable garden or taking leisurely
-              strolls with my dogs,
+              Beyond the realm of development, you&apos;ll likely find me
+              immersing myself in a captivating book, engaging in thrilling Call
+              of Duty matches, tending to my vegetable garden or taking
+              leisurely strolls with my dogs,
             </span>
             <br /> <br />
           </motion.p>

@@ -65,6 +65,7 @@ const Header = () => {
                     className={`${
                       link.path === pathname && "text-accent"
                     } capitalize text-[16px]`}
+                    key={index}
                   >
                     <li onClick={() => setIsOpen(false)}>{link.name}</li>
                   </Link>

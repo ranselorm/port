@@ -48,9 +48,9 @@ const Banner = () => {
               to craft interactive and responsive user interfaces that
               prioritize user-friendliness.
               <br />
-              <br /> Are you in need of a project to be brought to life? Let's
-              join forces and make it happen! Feel free to reach out so we can
-              discuss and connect.
+              <br /> Are you in need of a project to be brought to life?
+              Let&apos;s join forces and make it happen! Feel free to reach
+              out so we can discuss and connect.
             </motion.p>
             {/* <article className="text-2xl mb-[30px]">
               <motion.div
