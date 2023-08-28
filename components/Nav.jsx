@@ -10,9 +10,9 @@ import {
 //  links
 const links = [
   { name: "home", path: "/", icon: <HiHome /> },
-  // { name: "about", path: "/about", icon: <HiUser /> },
+  { name: "about", path: "/about", icon: <HiUser /> },
   // { name: "services", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "work", path: "/work", icon: <HiViewColumns /> },
+  { name: "portfolio", path: "/portfolio", icon: <HiViewColumns /> },
 
   {
     name: "contact",
@@ -30,8 +30,8 @@ const Nav = () => {
   const router = useRouter();
   const pathname = router.pathname;
   return (
-    <nav className="md:flex flex-col items-center xl:justify-center fixed gap-y-4 h-max mt-auto xl:right-[2%] md:top-0  hidden z-50 xl:w-16 xl:max-w-md xl:h-screen">
-      <div className="w-full flex xl:flex-col justify-between xl:justify-center items-center gap-y-10 px-10 md:px-40 xl:px-0 xl:h-max py-2 xl:py-10 bg-white/10 backdrop-blur-sm text-2xl xl:text-xl xl:rounded-full">
+    <nav className="lg:flex flex-col items-center lg:justify-center fixed gap-y-4 h-max mt-auto lg:right-[2%] lg:top-0 hidden z-50 lg:w-16 lg:max-w-md lg:h-screen">
+      <div className="w-full flex lg:flex-col justify-between lg:justify-center items-center gap-y-10 px-10 md:px-40 lg:px-0 lg:h-max py-2 lg:py-10 bg-white/10 backdrop-blur-sm text-2xl lg:text-xl lg:rounded-full">
         {links.map((link, index) => (
           <Link
             href={link.path}
@@ -43,7 +43,7 @@ const Nav = () => {
             {/* tooltip */}
             <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
               <div className="bg-white flex items-center p-[6px] relative rounded-sm">
-                <p className="text-[10px] text-primary leading-none font-semibold capitalize">
+                <p className="text-[14px] text-primary leading-none font-semibold capitalize">
                   {link.name}
                 </p>
                 {/* triangle */}

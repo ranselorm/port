@@ -24,20 +24,28 @@ const aboutData = [
         img: "/css.png",
       },
       {
-        title: "Javascript",
+        title: "Js",
         img: "/js.png",
+      },
+      {
+        title: "Python",
+        img: "/python.png",
       },
       {
         title: "React",
         img: "/react1.png",
       },
       {
+        title: "Native",
+        img: "/native.png",
+      },
+      {
         title: "Next",
         img: "/next1.png",
       },
       {
-        title: "Tailwind CSS",
-        img: "/tail.png",
+        title: "Tailwind",
+        img: "/tailwind.png",
       },
       {
         title: "Nodejs",
@@ -74,24 +82,28 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-0 px-2 xl:px-0 text-left text-white text-[16px] flex flex-col "
+            className="max-w-[700px] mx-auto xl:mx-0 mb-2 xl:mb-0 px-2 xl:px-0 text-justify xl:text-left text-white text-[14px] flex flex-col "
           >
             <span>
-              Hey Pal, I&apos;m a Javascript developer who focuses on Frontend
-              development using HTML5, CSS3, Js & React.
+              Hello there! I&apos;m Selorm, also known as [ranselorm]. My
+              passion revolves around crafting applications for both the web and
+              mobile platforms.
             </span>
             <span className="my-3 lg:my-5">
-              I don&apos;t regularly work on backend but when I do, my preferred
-              stack are Node, Express and MongoDB.
+              I wield a diverse set of languages including HTML, CSS,
+              JavaScript, and Python. When it comes to frameworks, I'm
+              well-versed in the likes of ReactJS, Node.js, Django, and React
+              Native.
             </span>
             <span className="">
-              I am comfortable working with REST and GraphQL APIs. Not
-              developing? I&apos;m prolly in my vegetable garden, walking my
-              dogs, playing Call of Duty or Reading.
+              Beyond the realm of development, you'll likely find me immersing
+              myself in a captivating book, engaging in thrilling Call of Duty
+              matches, tending to my vegetable garden or taking leisurely
+              strolls with my dogs,
             </span>
             <br /> <br />
           </motion.p>
-          <Link href={"/work"} className="hidden md:flex">
+          <Link href={"/portfolio"} className="hidden md:flex">
             <motion.button
               variants={fadeIn("right", 0.5)}
               initial="hidden"
@@ -99,7 +111,8 @@ const About = () => {
               exit="hidden"
               className="border-white/50 border px-4 py-2 rounded-full max-w-[150px] overflow-hidden group hover:border-accent hover:transition-all hover:duration-300 flex items-center gap-x-4 -mt-[50px] xl:-mt-4 mb-2"
             >
-              Portfolio <BsArrowRight className="text-xl" />
+              Portfolio
+              <BsArrowRight className="transform translate-x-0 group-hover:translate-x-2 transition-all duration-300" />
             </motion.button>
           </Link>
         </div>
@@ -126,12 +139,12 @@ const About = () => {
             })}
           </div>
           {/* -------------------------------------------------------------------------------- */}
-          <div className="grid grid-cols-2 xl:grid-cols-4 gap-x-4 xl:gap-y-4 gap-y-0 max-w-[70%] text-white/60 xl:mt-10 mt-4">
+          <div className="grid grid-cols-5 xl:grid-cols-5 gap-x-4 xl:gap-y-4 gap-y-4 max-w-[70%] text-white/60 xl:mt-10 mt-4">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div key={itemIndex}>
-                  <div className="flex gap-x-4 flex-wrap">
-                    <div className="w-[200px] h-[50px] relative flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-y-3">
+                    <div className="w-[300px] h-[30px] relative">
                       <Image
                         src={item.img}
                         alt="skills"
@@ -139,7 +152,7 @@ const About = () => {
                         className="object-contain"
                       />
                     </div>
-                    <br />
+                    <p className="text-white text-[14px]">{item.title}</p>
                   </div>
                 </div>
               );

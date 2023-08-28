@@ -39,6 +39,7 @@ module.exports = {
         poppins: [`var(--font-poppins)`, "sans-serif"],
         sora: [`var(--font-sora)`, "sans-serif"],
         montserrat: [`var(--font-montserrat)`, "sans-serif"],
+        mullish: [`var(--font-mullish)`, "sans-serif"],
       },
     },
   },

@@ -38,18 +38,6 @@ const Header = () => {
           <Link href={"/"}>
             <div className="text-[18px]">Selorm</div>
           </Link>
-          {/* <ul className="items-center hidden md:flex md:gap-x-8 bg-red-500 ">
-            {links.map((link, index) => (
-              <Link
-                href={link.path}
-                className={`${
-                  link.path === pathname && "text-accent font-bold"
-                } capitalize text-[18px]`}
-              >
-                <li>{link.icon}</li>
-              </Link>
-            ))}
-          </ul> */}
           <Nav />
           <Socials />
           {isOpen ? (
